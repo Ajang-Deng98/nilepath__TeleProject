@@ -116,7 +116,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: #14055a;
+  background-color: #edecf1;
   border-radius: 3px;
 }
 
@@ -136,7 +136,7 @@ body {
     position: absolute;
     top: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(248, 241, 241, 0.8);
     padding: 20px 0;
     z-index: 1000;
   }
@@ -148,7 +148,7 @@ body {
     position: absolute;
     top: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(241, 239, 239, 0.8);
     padding: 20px 0;
     z-index: 1000;
     border-color: #010b02;
