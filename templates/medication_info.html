@@ -3,11 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Medication Information</title>
+    <style>
+        body {
+            font-family: "Nunito", system-ui;
+            font-optical-sizing: auto;
+            font-style: normal;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color:  #14055a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            color:  #14055a;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color:  #14055a;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Medication Information</h1>
-    <p>Here you can find detailed information about medications, their uses, side effects, and more.</p>
-    <!-- Add more content related to medication information here -->
+    <header>
+        <h1>Medication Information</h1>
+        <p>Detailed information about medications, their uses, precautions, side effects, and more.</p>
+    </header>
+
+    <div class="container">
+        <h2>Categories of Medications</h2>
+        <p>Explore various types of medications used for different health conditions:</p>
+        <ul>
+            <li>
+                <strong>Pain Relievers:</strong> 
+                <a href="#">Over-the-counter (OTC) and prescription painkillers such as ibuprofen, acetaminophen, and opioids.</a>
+            </li>
+            <li>
+                <strong>Antibiotics:</strong> 
+                <a href="#">Medications like amoxicillin and ciprofloxacin used to treat bacterial infections.</a>
+            </li>
+            <li>
+                <strong>Antidepressants:</strong> 
+                <a href="#">Learn about SSRIs, SNRIs, and tricyclic antidepressants for mental health conditions.</a>
+            </li>
+            <li>
+                <strong>Antihistamines:</strong> 
+                <a href="#">Drugs like loratadine and cetirizine to combat allergies.</a>
+            </li>
+            <li>
+                <strong>Blood Pressure Medications:</strong> 
+                <a href="#">ACE inhibitors, beta-blockers, and diuretics for hypertension management.</a>
+            </li>
+        </ul>
+
+        <h2>Key Information About Medications</h2>
+        <ul>
+            <li>
+                <strong>Uses:</strong> 
+                Medications are prescribed for specific health conditions or to prevent diseases. For example, statins help lower cholesterol, while vaccines prevent infections.
+            </li>
+            <li>
+                <strong>Dosage:</strong> 
+                Always follow the recommended dosage. Taking too much or too little can reduce the drug's effectiveness or cause side effects.
+            </li>
+            <li>
+                <strong>Precautions:</strong> 
+                Check for allergies, interactions with other medications, or pre-existing conditions before starting a new medication.
+            </li>
+            <li>
+                <strong>Side Effects:</strong> 
+                Common side effects may include nausea, dizziness, or headaches. Serious side effects should be reported to a healthcare provider immediately.
+            </li>
+        </ul>
+
+        <h2>Medication Safety Tips</h2>
+        <ul>
+            <li>Store medications in a cool, dry place, away from direct sunlight.</li>
+            <li>Keep medications out of reach of children and pets.</li>
+            <li>Do not share your medications with others.</li>
+            <li>Dispose of expired medications properly by following local guidelines or consulting a pharmacist.</li>
+            <li>Always check the medication label and instructions before use.</li>
+        </ul>
+
+        <h2>FAQs About Medications</h2>
+        <ul>
+            <li>
+                <strong>Can I take medications with food?</strong>
+                <p>Some medications require food to reduce stomach irritation, while others may need to be taken on an empty stomach. Follow your doctor’s advice or the medication instructions.</p>
+            </li>
+            <li>
+                <strong>What should I do if I miss a dose?</strong>
+                <p>Take the missed dose as soon as you remember. If it’s close to your next dose, skip the missed dose and resume your regular schedule. Never double the dose.</p>
+            </li>
+            <li>
+                <strong>How can I avoid drug interactions?</strong>
+                <p>Inform your doctor about all the medications, supplements, and herbal products you are taking. Avoid mixing medications without medical advice.</p>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NilePath Medication Information. Promoting safe and informed medication use.</p>
+    </footer>
 </body>
 </html>

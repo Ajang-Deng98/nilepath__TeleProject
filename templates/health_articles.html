@@ -3,11 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Health Articles</title>
+    <style>
+        body {
+            font-family: "Nunito", system-ui;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color:  #14055a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color:  #14055a;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 20px;
+        }
+
+        .article {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .article-title {
+            font-size: 1.5em;
+            color: #007bff;
+        }
+
+        .article-title:hover {
+            text-decoration: underline;
+        }
+
+        .article-summary {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color:  #14055a;
+            color: #fff;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Health Articles</h1>
-    <p>Stay updated with the latest health-related articles, research, and findings in the world of medicine and healthcare.</p>
-    <!-- Add more content related to health articles here -->
+    <header>
+        <h1>Health Articles</h1>
+        <p>Stay updated with the latest health-related news, research, and articles in medicine and healthcare.</p>
+    </header>
+
+    <div class="container">
+        <h2>Latest Articles</h2>
+        <div class="article">
+            <h3 class="article-title"><a href="#">10 Tips for a Healthy Lifestyle</a></h3>
+            <p class="article-summary">Discover practical steps to maintain a balanced diet, exercise regularly, and manage stress effectively.</p>
+            <p><a href="#">Read More...</a></p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title"><a href="#">Understanding Mental Health: Breaking the Stigma</a></h3>
+            <p class="article-summary">Learn about mental health awareness, common disorders, and how to support those in need.</p>
+            <p><a href="#">Read More...</a></p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title"><a href="#">Vaccines: Facts vs. Myths</a></h3>
+            <p class="article-summary">Get informed about the importance of vaccines, how they work, and debunking common misconceptions.</p>
+            <p><a href="#">Read More...</a></p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title"><a href="#">Managing Chronic Conditions: A Guide for Patients</a></h3>
+            <p class="article-summary">Understand how to live well with chronic conditions like diabetes, hypertension, and arthritis.</p>
+            <p><a href="#">Read More...</a></p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title"><a href="#">The Role of Nutrition in Preventing Diseases</a></h3>
+            <p class="article-summary">Explore the connection between a healthy diet and reduced risk of chronic diseases.</p>
+            <p><a href="#">Read More...</a></p>
+        </div>
+
+        <h2>Popular Categories</h2>
+        <ul>
+            <li><a href="#">Healthy Living</a></li>
+            <li><a href="#">Mental Health</a></li>
+            <li><a href="#">Chronic Conditions</a></li>
+            <li><a href="#">Nutrition and Diet</a></li>
+            <li><a href="#">Medical Innovations</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NilePath Health Articles. Empowering lives through knowledge.</p>
+    </footer>
 </body>
 </html>
+
