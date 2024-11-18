@@ -200,116 +200,101 @@ body {
 }
 
 
-/* Hero Section Styling */
+/* Hero Section */
 #hero {
-  background-image: url('/static/images/labimportant.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
+  background-color: #e6f0ff; /* Light blue background */
+  padding: 40px 5px; /* Space around the content */
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-align: center;
+  align-items: center;
+  padding-top: 200px;
 }
 
-/* Optional overlay to darken the background for better text contrast */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-  z-index: 1;
+.hero-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Space between columns */
 }
 
-/* Content inside the hero section */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 80%;
-  padding: 20px;
+.hero-image img {
+  width: 100%; /* Make the image responsive to its container */
+  max-width: 600px; /* Increase the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Set a maximum height if needed */
+  display: block;
+  border-radius: 50%; /* Optional: Add rounded corners */
+  object-fit: contain; /* Ensures the image doesn't stretch */
+  
 }
 
-.hero-content h1 {
+/* Left Column: Text */
+.hero-text {
+  flex: 1; /* Takes 50% width by default */
+  max-width: 600px; /* Restricts the maximum width */
+  color:  #14055a; /* Blue text */
+  padding-bottom: 200px;
+}
+
+.hero-text h1 {
   font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
   line-height: 1.6;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.hero-buttons a {
-  text-decoration: none;
-  color: white;
+.hero-button {
+  display: inline-block;
   padding: 10px 20px;
+  background-color:  #0b0b0b; /* Orange button */
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.btn-primary {
-  background-color: #007BFF; /* Primary button color */
+.hero-button:hover {
+  background-color:  #14055a; /* Darker orange on hover */
 }
 
-.btn-primary:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+/* Right Column: Image */
+.hero-image {
+  flex: 1; /* Takes 50% width by default */
+  text-align: center;
 }
 
-.btn-secondary {
-  background-color: #6c757d; /* Secondary button color */
-}
-
-.btn-secondary:hover {
-  background-color: #495057; /* Darker shade on hover */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .hero-content h1 {
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stacks columns vertically */
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex: unset; /* Removes the 50% width constraint */
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
     font-size: 2rem;
   }
 
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .hero-buttons a {
+  .hero-text p {
     font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -319,69 +304,100 @@ body {
 /* About Us Section */
 /* About Us Section */
 #about-us {
-  padding: 50px 0;
-  
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* Light background */
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  gap: 100px; /* Space between elements */
+}
+
+.about-image {
+  flex: 1 1 30%; /* Takes up 40% of the width, adjusts responsively */
+  text-align: center;
 }
 
 .about-image img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 80px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .about-content {
-  max-width: 600px;
+  flex: 1 1 50%; /* Takes up 50% of the width, adjusts responsively */
 }
 
 .about-content h2 {
-  font-size: 30px;
+  font-size: 2.2em;
   color: #14055a;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.about-content .subtitle {
+  font-size: 1em;
+  color: #7a7a7a;
   margin-bottom: 20px;
 }
 
-.about-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+.about-content h3 {
+  font-size: 1.5em;
+  color: #14055a;
   margin-bottom: 15px;
 }
 
-.about-content p strong {
-  color: #333;
-  font-weight: bold;
+.about-content p {
+  font-size: 1em;
+  color: #333333;
+  margin-bottom: 20px;
 }
 
-.about-container:hover .about-image img {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+.about-content ul {
+  list-style: none;
+  padding: 0;
 }
 
+.about-content ul li {
+  font-size: 1em;
+  color: #555555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
 
-@media (max-width: 992px) {
+.about-content ul li::before {
+  content: "✔";
+  color: #14055a;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 100%; /* Full width */
+  }
+
+  .about-content h2 {
     text-align: center;
   }
-  
-  .about-content {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
 
-  .about-image img {
-    width: 90%;
+  .about-content .subtitle {
+    text-align: center;
   }
 }
 
