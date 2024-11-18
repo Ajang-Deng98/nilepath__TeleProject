@@ -203,12 +203,19 @@ body {
 
 
 /* Hero Section */
+
 #hero {
   position: relative;
   width: 100%;
+  height: 100vh; /* Full viewport height */
   color: #ffffff; /* Secondary Color */
   text-align: center;
   overflow: hidden;
+  background: url('static/images/labimportant.jpg');
+
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-attachment: fixed; /* Creates a parallax effect (optional) */
+  background-position: center; /* Centers the image */
 }
 
 /* Hero overlay to make the background darker for better text visibility */
@@ -289,6 +296,33 @@ body {
   color: #010b02; /* Primary Green */
   border-color:  #2D867D;
   box-shadow: 0 6px 20px rgba(225, 220, 220, 0.5);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero {
+    height: 80vh; /* Adjust height for smaller devices */
+  }
+
+  .hero-content {
+    max-width: 110%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    height: 70vh; /* Further reduce height for very small devices */
+  }
+
+  .hero-content h1 {
+    font-size: 1.3em;
+  }
+
+  .hero-content p {
+    font-size: 0.8em;
+  }
 }
 
 /* About Us Section */
