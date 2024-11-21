@@ -366,7 +366,5 @@ def send_email():
         print(f"Failed to send email: {str(e)}")
         return jsonify({"success": False, "message": "Failed to send email"}), 500
     
-    
-
 if __name__ == '__main__':
     app.run(debug=True)
