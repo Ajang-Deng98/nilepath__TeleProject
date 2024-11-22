@@ -205,7 +205,7 @@ def reset_password(token):
 # Define the API endpoint and headers for RapidAPI
 RAPIDAPI_URL = "https://bmi.p.rapidapi.com/v1/bmi"
 RAPIDAPI_HEADERS = {
-    'x-rapidapi-key': "1e30b9b14dmshc7fd4d8abafd6b9p1a2636jsn8261b0d5abfb",
+    'x-rapidapi-key': "72f0a5d1f5msh0cd9e238a4bba4fp1b1ab3jsn3ac7ddae081b",
     'x-rapidapi-host': "bmi.p.rapidapi.com",
     'Content-Type': "application/json"
 }
