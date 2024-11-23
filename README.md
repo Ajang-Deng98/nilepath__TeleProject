@@ -1,8 +1,8 @@
-# Website Name
+# NILEPATH TELEMEDICINE
 
 ## Description
 
-This website is a healthcare-focused platform designed to enhance access to medical services in South Sudan. It provides streamlined appointment booking services, essential medical information, a clinic finder, and additional features like BMI calculation to empower users with vital healthcare resources.
+The Nilepath Telemdecine is a healthcare-focused platform designed to enhance access to medical services in South Sudan. It provides streamlined appointment booking services, essential medical information, a clinic finder, and additional features like BMI calculation to empower users with vital healthcare resources.
 
 ## Installation
 
@@ -38,17 +38,20 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 5. Open a pull request.
 
 ## Technologies Used
-Frontend:
+1. Frontend:
 HTML, CSS, JavaScript
-Backend:
+
+2. Backend:
 Python Flask, SQLite 
-Tools:
+
+3. Tools:
 GitHub for version control
 Figma for design mockups
 Postman for API testing
 
 ## Contributors
 Ajang Chol Aguer Deng
+
 Lead Developer
 
 
