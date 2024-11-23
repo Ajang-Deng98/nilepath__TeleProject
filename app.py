@@ -28,7 +28,7 @@ app.config['MAIL_PASSWORD'] = 'guij aytb xayu qwmt'
 app.config['MAIL_DEFAULT_SENDER'] = 'ajangcholaguer98@gmail.com'
 
 mail = Mail(app)
-s = URLSafeTimedSerializer(app.secret_key)  # Token serializer for reset links
+s = URLSafeTimedSerializer(app.secret_key)  
 db.init_app(app)
 
 serializer = URLSafeTimedSerializer(app.secret_key)
@@ -117,7 +117,7 @@ def book_appointment():
     return render_template('book-appointment.html')
 
 
-
+# Book result Route
 
 @app.route('/result')
 def result():
@@ -126,19 +126,19 @@ def result():
 # Route for Health Guides
 @app.route('/health-guides')
 def health_guides():
-    # You can replace this with your actual content
+    
     return render_template('health_guides.html')
 
 # Route for Medication Information
 @app.route('/medication-info')
 def medication_info():
-    # You can replace this with your actual content
+    
     return render_template('medication_info.html')
 
 # Route for Health Articles
 @app.route('/health-articles')
 def health_articles():
-    # You can replace this with your actual content
+   
     return render_template('health_articles.html')
 
 
@@ -202,7 +202,7 @@ def reset_password(token):
 
 
 
-# Define the API endpoint and headers for RapidAPI
+#  API endpoint and headers for RapidAPI
 RAPIDAPI_URL = "https://bmi.p.rapidapi.com/v1/bmi"
 RAPIDAPI_HEADERS = {
     'x-rapidapi-key': "72f0a5d1f5msh0cd9e238a4bba4fp1b1ab3jsn3ac7ddae081b",
@@ -232,7 +232,7 @@ def calculate_bmi():
         
     }
 
-    # Make the API request to RapidAPI
+    # API request to RapidAPI
     response = requests.post(RAPIDAPI_URL, headers=RAPIDAPI_HEADERS, json=payload)
 
     # Handle the response from the API

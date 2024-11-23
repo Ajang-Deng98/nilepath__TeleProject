@@ -56,7 +56,7 @@ const clinics = [
   { name: 'Hai Salaam Clinic', address: '123 Salaam Rd, Juba', lat: 4.8609, lng: 31.5989 },
   { name: 'Malakia Medical Center', address: '456 Malakia St, Juba', lat: 4.8530, lng: 31.6108 },
   { name: 'Greenfield Health Clinic', address: '789 Greenfield Ave, Juba', lat: 4.8516, lng: 31.6013 },
-  // Add remaining clinics here...
+  
 ];
 
 // Initialize map

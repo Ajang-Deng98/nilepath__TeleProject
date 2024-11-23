@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to animate counting up
   function countUp(counter) {
     const target = +counter.getAttribute("data-target");
-    const speed = 200; // Adjust speed as needed
+    const speed = 200; 
     const increment = target / speed;
 
     let count = 0;
